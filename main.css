@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|Inconsolata|Roboto+Mono');
+* { box-sizing: border-box; margin: 0; }
+body {
+	height: 100%;
+}
+.container > li {
+  font-family: "Roboto Mono";
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  list-style-type: none;
+}
+.btn {
+  text-decoration: none;
+  color: #FBFFF7;
+}
+.btn span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.container {
+  padding: 0;
+}
+
+.search-input {
+  font-family: "Roboto Mono";
+  background: #ff6e68;
+  border: 0;
+  width: 100%;
+  outline: 0;
+  background: transparent;
+  color: #FBFFF7;
+}
+
+::placeholder{
+  color: #FBFFF7;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+/*profile section*/
+.profile {
+	font-family: 'Exo';
+	padding: 10px;
+    font-size: 1em;
+}

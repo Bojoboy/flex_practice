@@ -1,0 +1,49 @@
+.container {
+  background-image: url(Omoide.Emanon.full.2121051.png);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 100vh;
+  color: #ECE5F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media all and (max-width: 600px) {
+  .container {
+	flex-wrap: wrap;
+  }
+  .container > li {
+	flex: 1 1 50%;
+  }
+  .search > input {
+	text-align: center;
+  }
+}
+.nav-text {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+/*profile section*/
+.profile {
+	background-blend-mode: multiply;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+.second {
+	justify-content: flex-end;
+	align-self: flex-end;
+}
+@media all and (max-width: 600px) {
+  .profile {
+    flex-wrap: wrap;
+  }
+  .profile > div {
+    flex: 1 1 100%;
+  }
+}
